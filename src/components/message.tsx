@@ -1,8 +1,11 @@
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 
 const message = () => {
   return (
-    <div>message</div>
+    <div>
+        <Button colorScheme='blue'>Button</Button>
+    </div>
   )
 }
 
