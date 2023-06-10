@@ -1,0 +1,97 @@
+/* ========================== */
+    /* General */
+/* ========================== */
+
+.p {
+    margin-left: 1em;
+  }
+
+/* ========================== */
+    /* Layout */
+/* ========================== */
+.container {
+    background: rgba(255, 0, 0, 0.9);
+    padding: 1em;
+  }
+  
+.innerContainer{
+    background: rgba(255, 0, 0, 0.5);
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    /* padding: 1em 1em .5em 1em; */
+    transition: display 4s easeInOut 1s;
+  }
+
+.socials {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.contact {
+    margin: 1em 0;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+.contactInfo {
+    display: flex;
+    margin: 1em 0;
+  }
+  
+.icon {
+    margin-top: 1em;
+  }
+  
+.clicker {
+    /* background: red; */
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  
+/* ========================== */
+    /* Media Queries */
+/* ========================== */
+
+@media   (min-width: 380px){
+
+    .contact{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 800px) {
+    .container{
+        padding: 1em 3em;
+    }   
+
+    .innerContainer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      width: 100%;
+      max-width: 100%;
+    }
+    .contact{
+        order: -1;
+    }
+
+    .icon {
+        margin-top: 0;
+      }
+  }
