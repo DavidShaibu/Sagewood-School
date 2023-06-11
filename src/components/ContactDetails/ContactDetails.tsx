@@ -20,7 +20,7 @@ const ContactDetails = () => {
   const contact = [
     {
       icon: faMapMarkerAlt,
-      address: "No. 8, Johnson Street, Off Coker Road, ilupeju, Lagos",
+      address: "No. 8, Johnson Street, Off Coker Road, Ilupeju, Lagos",
     },
     { icon: faPhoneVolume, address: "+234-805-703-7001" },
   ];
@@ -46,7 +46,7 @@ const ContactDetails = () => {
                   {contact.map((info, index) => (
                     <div key={index} className={styles.contactInfo}>
                       <FontAwesomeIcon icon={info.icon} />
-                      <p className={styles.p}>{info.address}</p>
+                      <p className={styles.infoText}>{info.address}</p>
                     </div>
                   ))}
               </div>
@@ -59,12 +59,3 @@ const ContactDetails = () => {
 
 export default ContactDetails;
 
-
-
-      {/* <div style={styles.clicker} onClick={() => setOpen(!isOpen)}>
-          {isOpen ? (
-            <FontAwesomeIcon icon={faAngleUp} />
-          ) : (
-            <FontAwesomeIcon icon={faAngleDown} />
-          )}
-        </div> */}

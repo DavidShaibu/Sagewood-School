@@ -1,7 +1,7 @@
 
 .kid {
-    font-size: 3rem;
-    max-width: 450px;
+    font-size: 2rem;
+    max-width: 500px;
 }
 
 .supermen {
@@ -11,26 +11,31 @@
     letter-spacing: 2px;
 }
 
-.purple {
+.pattern {
     background-image: url(./assets/diamonds.png);
     background-repeat: repeat;
     width: 100%;
     height: 400px;
     color: white;
-    padding: 8em 0 2em 1em;
+    padding: 13em 0 2em 1em;
   }
 
-@media   (min-width: 380px){
+@media   (min-width: 415px){
 
-    .purple {
+    .pattern {
         padding: 12em 0 2em 4.5em;
+    }
+
+    .kid {
+        font-size: 3rem;
+        /* max-width: 450px; */
     }
 }
 
 @media (min-width: 800px){
-    .purple {
+    .pattern {
         height: 500px;
-        padding: 16em 0 2em 8em;
+        padding: 13em 0 2em 8em;
     }
   }
 

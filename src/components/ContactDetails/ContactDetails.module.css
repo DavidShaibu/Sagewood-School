@@ -2,7 +2,7 @@
     /* General */
 /* ========================== */
 
-.p {
+.infoText {
     margin-left: 1em;
   }
 
@@ -10,12 +10,11 @@
     /* Layout */
 /* ========================== */
 .container {
-    background: rgba(255, 0, 0, 0.9);
+    background-image: url("./image5.png");
     padding: 1em;
   }
   
 .innerContainer{
-    background: rgba(255, 0, 0, 0.5);
     color: white;
     font-size: .9rem;
     display: flex;
@@ -24,8 +23,6 @@
     align-items: center;
     max-width: 900px;
     width: 100%;
-    /* padding: 1em 1em .5em 1em; */
-    transition: display 4s easeInOut 1s;
   }
 
 .socials {
@@ -68,7 +65,7 @@
     /* Media Queries */
 /* ========================== */
 
-@media   (min-width: 380px){
+@media   (min-width: 415px){
 
     .contact{
         flex-direction: row;
@@ -77,7 +74,7 @@
 }
 @media (min-width: 800px) {
     .container{
-        padding: 1em 3em;
+        padding: .5em 3em;
     }   
 
     .innerContainer {
@@ -88,7 +85,12 @@
       max-width: 100%;
     }
     .contact{
+        margin: 0;
         order: -1;
+    }
+
+    .contactInfo {
+        margin: 0;
     }
 
     .icon {

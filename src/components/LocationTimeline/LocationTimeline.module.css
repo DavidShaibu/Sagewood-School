@@ -1,0 +1,48 @@
+.timelineText {
+    margin: 2em;
+}
+
+.timelineLink{
+    color: white !important;
+}
+
+.locationTimeline{
+    padding: 2em 1em 1em;
+    margin: 0px;
+    width: 100%;
+    color: white;
+}
+
+.image1, .image2, .image3 {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1{
+    background-image: url("./assets/image3.png");
+}
+.image2{
+    background-image: url("./assets/image5.png");
+}
+
+@media (min-width: 415px){
+    .locationTimeline{
+        margin-top: calc(0px - 10vw);
+    }
+}
+
+@media (min-width: 800px){
+    .locationTimeline{
+        display: flex;
+        padding: 0 3em;
+        margin-top: calc(0px - 10vw);
+    }
+    .image1, .image2, .image3 {
+        height: 250px;
+    }
+}

@@ -1,9 +1,8 @@
-import ContactDetails from "./components/ContactDetails/ContactDetails";
 import GptDetails from "./components/GptDetails/GptDetails";
 import Header from "./components/Header";
 import LocationTimeline from "./components/LocationTimeline/LocationTimeline";
-import NavBar from "./components/Nav/NavBar";
-import Pattern from "./components/Patterns/Pattern";
+import Hero from "./components/Hero/Hero";
+import { locationTimelineInput } from "./input";
 
 
 function App() {
@@ -11,8 +10,8 @@ function App() {
   <>
     <Header />
     <main>
-      <Pattern />
-      <LocationTimeline />
+      <Hero />
+      <LocationTimeline entries={locationTimelineInput}/>
     </main>
     
   </>
