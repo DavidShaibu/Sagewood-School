@@ -13,13 +13,11 @@ interface Props {
 }
 
 const LocationTimeline = ({ entries }: Props) => {
-    const length = entries.length;
-    const numberArray = [...Array(length).keys()].map((num) => num + 1);
     
   return (
     <div className={styles.locationTimeline}>
       {entries.map((entry, index) => (
-        <div key={entry.heading} className={styles[`image${index + 1}`]}>
+        <div key={entry.heading} style={{backgroundImage: `url(${entry.imageUrl})`}} className={styles.imageContainer} >
           <h2>{entry.heading}</h2>
           <p className={styles.timelineText}>{entry.text}</p>
           <a className={styles.timelineLink} href={entry.linkUrl}>{entry.linkText}</a>
@@ -36,6 +34,6 @@ export default LocationTimeline;
 <div className={styles.locationTimeline}>
 <div className={styles.image1}></div>
 <div className={styles.image2}></div>
-</div> 
+</div> className={styles[`image${index + 1}`]} style={{backgroundImage: `url("./assets/image3.png")`}}
 }
 */

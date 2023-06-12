@@ -12,8 +12,7 @@
     width: 100%;
     color: white;
 }
-
-.image1, .image2, .image3 {
+.container {
     height: 200px;
     width: 100%;
     text-align: center;
@@ -23,12 +22,22 @@
     align-items: center;
 }
 
-.image1{
-    background-image: url("./assets/image3.png");
+.imageContainer {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.image2{
-    background-image: url("./assets/image5.png");
+
+/* .image1, .image3{
+    background-image: url("./assets/image1.png");
 }
+.image2, .image4{
+    background-image: url("./assets/image2.png");
+} */
 
 @media (min-width: 415px){
     .locationTimeline{

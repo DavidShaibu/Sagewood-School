@@ -11,7 +11,7 @@
     letter-spacing: 2px;
 }
 
-.pattern {
+.image {
     background-image: url(./assets/diamonds.png);
     background-repeat: repeat;
     width: 100%;
@@ -22,7 +22,7 @@
 
 @media   (min-width: 415px){
 
-    .pattern {
+    .image {
         padding: 12em 0 2em 4.5em;
     }
 
@@ -33,7 +33,7 @@
 }
 
 @media (min-width: 800px){
-    .pattern {
+    .image {
         height: 500px;
         padding: 13em 0 2em 8em;
     }
