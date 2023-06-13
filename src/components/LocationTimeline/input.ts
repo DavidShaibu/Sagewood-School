@@ -1,7 +1,7 @@
 import image1 from "./assets/image1.png";
 import image2 from "./assets/image2.png";
 
-export const locationTimelineInput = [
+const locationTimelineInput = [
   {
     imageUrl: image1,
     heading:"Location",
@@ -20,3 +20,4 @@ export const locationTimelineInput = [
 
 ];
 
+export default locationTimelineInput;

@@ -1,0 +1,55 @@
+.container{
+    background-image: url("./assets/cream2.png");
+    width: 100%;
+    /* height: auto; */
+    margin-top: 1em;
+    padding: 14em 3em 1em;
+    border-bottom: .5em solid;
+    border-image: linear-gradient(to right, transparent 25%, #00beb0 25%, #00beb0 75%, transparent 75%);
+    border-image-slice: 1 ;
+}
+
+.offering {
+    text-align: center;
+    color: #9c8481;
+    height: 400px;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.offerImage {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    color: white;
+  }
+
+  .offerTitle {
+    color: #ef5874;
+    margin-top: 1em;
+  }
+
+  .offerText {
+    width: 250px;
+    line-height: 1.6;
+  }
+
+@media (min-width: 800px){
+    .container{
+        margin-top: -8em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1100px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+

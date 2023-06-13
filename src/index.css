@@ -6,3 +6,13 @@
 body {
     width: 100vw;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+  }
+  
+  .location {
+    z-index: 0;
+  }

@@ -15,7 +15,7 @@ interface Props {
 const LocationTimeline = ({ entries }: Props) => {
     
   return (
-    <div className={styles.locationTimeline}>
+    <div className={styles.container}>
       {entries.map((entry, index) => (
         <div key={entry.heading} style={{backgroundImage: `url(${entry.imageUrl})`}} className={styles.imageContainer} >
           <h2>{entry.heading}</h2>
