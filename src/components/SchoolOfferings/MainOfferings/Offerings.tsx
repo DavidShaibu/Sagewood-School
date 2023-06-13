@@ -1,4 +1,4 @@
-import LocationTimeline from "../LocationTimeline/LocationTimeline";
+import LocationTimeline from "../../OperationDetails/OperationDetails";
 import styles from "./Offerings.module.css";
 
 interface Entries {

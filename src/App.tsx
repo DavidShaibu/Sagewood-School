@@ -1,9 +1,9 @@
-import GptDetails from "./components/GptDetails/GptDetails";
 import Header from "./components/Header";
 import HeroHome from "./components/Hero/Home/HeroHome";
-import LocationTimeline from "./components/LocationTimeline/LocationTimeline";
-import { locationTimelineInput, offeringsInput } from "./MainInput";
-import Offerings from "./components/SchoolOfferings/Offerings";
+import OperationDetails from "./components/OperationDetails/OperationDetails";
+import Offerings from "./components/SchoolOfferings/MainOfferings/Offerings";
+import MoreOfferings from "./components/SchoolOfferings/MoreOfferings/MoreOfferings";
+import { operationDetailsInput, offeringsInput, moreOfferingsInput } from "./MainInput";
 
 
 
@@ -12,14 +12,17 @@ function App() {
     <>
       <Header />
       <main className="main">
-        <div className="hero-wrapper">
+        <div className="heroWrapper">
           <HeroHome />
         </div>
-        <div className="location">
-          <LocationTimeline entries={locationTimelineInput}/>
+        <div className="locationWrapper">
+          <OperationDetails entries={operationDetailsInput}/>
         </div>
-        <div className="offerings-wrapper">
+        <div className="offeringsWrapper">
           <Offerings entries={offeringsInput}/>
+        </div>
+        <div className="moreOfferingsWrapper">
+          <MoreOfferings entries={moreOfferingsInput}/>
         </div>
       </main>
     </>

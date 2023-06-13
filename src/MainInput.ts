@@ -1,5 +1,13 @@
-import locationTimelineInput from "./components/LocationTimeline/input";
-import offeringsInput from "./components/SchoolOfferings/input";
+import operationDetailsInput from "./components/OperationDetails/input";
+import offeringsInput from "./components/SchoolOfferings/MainOfferings/input";
+import moreOfferingsInput from "./components/SchoolOfferings/MoreOfferings/inputs";
 
-export { locationTimelineInput, offeringsInput };
+
+
+
+
+
+
+
+export { operationDetailsInput, offeringsInput, moreOfferingsInput };
 

@@ -14,13 +14,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { CSSProperties, useState } from "react";
 import styles from "./ContactDetails.module.css";
+import { operationDetailsInput } from "../../MainInput";
 
 const ContactDetails = () => {
+  const addressObject = operationDetailsInput.find(input => input.heading === "Location");
   const socials = [faFacebookF, faLinkedinIn, faGoogle, faTwitter, faYoutube];
   const contact = [
     {
       icon: faMapMarkerAlt,
-      address: "No. 8, Johnson Street, Off Coker Road, Ilupeju, Lagos",
+      address: addressObject?.text,
     },
     { icon: faPhoneVolume, address: "+234-805-703-7001" },
   ];

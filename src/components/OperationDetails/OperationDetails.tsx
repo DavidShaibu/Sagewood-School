@@ -1,6 +1,6 @@
-import styles from "./LocationTimeline.module.css";
+import styles from "./OperationDetails.module.css";
 
-interface LocationTimelineInput {
+interface OperationDetails {
   imageUrl: string;
   heading: string;
   text: string;
@@ -9,7 +9,7 @@ interface LocationTimelineInput {
 }
 
 interface Props {
-  entries: LocationTimelineInput[];
+  entries: OperationDetails[];
 }
 
 const LocationTimeline = ({ entries }: Props) => {
