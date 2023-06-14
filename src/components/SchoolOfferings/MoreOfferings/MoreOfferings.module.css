@@ -8,17 +8,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* grid-template-columns: 1fr 1fr; */
+    overflow: hidden;
 }
 
-.offerImage {
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+.imageContainer {
+    /* background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
     width: 400px;
     height: 400px;
 }
 
+.offerImage{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: center center;
+}
 
 .offering{
     width: 400px;
@@ -45,10 +51,14 @@
         grid-gap: 0;
         grid-template-columns: 1fr 1fr;
     }
-    .offering, .offerImage {
+    .offering, .imageContainer {
         width: auto;
     }
     .offering {
-        padding: 3em;
+        padding: 1em;
+    }
+
+    .offerImage{
+        object-position: top center ;
     }
 }

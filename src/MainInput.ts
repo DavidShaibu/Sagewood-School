@@ -8,6 +8,5 @@ import moreOfferingsInput from "./components/SchoolOfferings/MoreOfferings/input
 
 
 
-
 export { operationDetailsInput, offeringsInput, moreOfferingsInput };
 

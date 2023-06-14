@@ -5,7 +5,7 @@
     margin-top: 1em;
     padding: 14em 3em 1em;
     border-bottom: .5em solid;
-    border-image: linear-gradient(to right, transparent 25%, #00beb0 25%, #00beb0 75%, transparent 75%);
+    border-image: linear-gradient(to right, transparent 10%, #00beb0 10%, #00beb0 90%, transparent 90%);
     border-image-slice: 1 ;
 }
 
@@ -49,6 +49,9 @@
 @media (min-width: 1100px){
     .container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        border-bottom: .5em solid;
+        border-image: linear-gradient(to right, transparent 5%, #00beb0 5%, #00beb0 95%, transparent 95%);
+        border-image-slice: 1 ;
     }
 }
 

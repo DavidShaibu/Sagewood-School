@@ -21,10 +21,13 @@ const MoreOfferings = ({ entries }: Props) => {
       {entries.map((entry, index) => (
         <React.Fragment key={index}>
           {entry.imageUrl && (
-            <div
-              style={{ backgroundImage: `url(${entry.imageUrl})` }}
-              className={styles.offerImage}
-            ></div>
+            <div className={styles.imageContainer}>
+              <img
+                className={styles.offerImage}
+                src={entry.imageUrl}
+                alt="An image of a child in school"
+              ></img>
+            </div>
           )}
 
           {entry.offering && (
@@ -40,3 +43,8 @@ const MoreOfferings = ({ entries }: Props) => {
 };
 
 export default MoreOfferings;
+
+// <div
+//   style={{ backgroundImage: `url(${entry.imageUrl})` }}
+//   className={styles.offerImage}
+// ></div>

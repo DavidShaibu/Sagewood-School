@@ -1,10 +1,15 @@
 import image1 from "./assets/image1.jpeg";
 import image2 from "./assets/image2.jpeg";
 import image3 from "./assets/image3.jpeg";
-import image4 from "./assets/image4.jpeg";
+import image4 from "./assets/image4.webp";
+import image5 from "./assets/image5.jpeg";
+import image6 from "./assets/image6.jpeg";
+import image7 from "./assets/image7.jpeg";
+import image8 from "./assets/diamonds.png";
+
 
 const moreOfferingsInput = [
-  { imageUrl: image1 },
+  { imageUrl: image8 },
   {
     offering: {
       heading: "Welcome to Sagewood Schools",
@@ -17,7 +22,7 @@ const moreOfferingsInput = [
           description: "Our summer school is fun filled with various educational, social, indoor & outdoor extra-curricular activities.",
         }
     },
-  { imageUrl: image3 },
+  { imageUrl: image8 },
 ];
 
 export default moreOfferingsInput;
