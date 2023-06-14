@@ -1,0 +1,48 @@
+.container, .imageContainer, .facilityContainer {
+    height: 500px;
+}
+
+.container {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    margin-top: 4em;
+}
+
+.imageContainer {
+    overflow: hidden;
+}
+
+.facilityContainer {
+    background-image: url("./assets/image1.png");
+    padding: 8em 5em;
+    text-align: center;
+}
+
+.facilityHeading {
+    font-size: 2rem;
+}
+
+.facilityText {
+    color: white;
+    margin: 3em;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+}
+
+.btnLearnMore {
+    all: unset;
+    width: 12em;
+    height: 4em;
+    font-weight: bolder;
+    color:  #00beb0;
+    background: white;
+    border-radius: 2em;
+}
+
+.btnLearnMore:hover, .btnLearnMore:focus {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}

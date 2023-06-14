@@ -1,4 +1,5 @@
 import Activities from "./components/Activities/Activities";
+import Facilities from "./components/Facilities/facilities";
 import Header from "./components/Header";
 import HeroHome from "./components/Hero/Home/HeroHome";
 import OperationDetails from "./components/OperationDetails/OperationDetails";
@@ -13,17 +14,26 @@ function App() {
     <>
       <Header />
       <main className="main">
-        <div className="heroWrapper">
+        <section className="heroWrapper">
           <HeroHome />
-        </div>
-        <div className="locationWrapper">
+        </section>
+        <section className="locationWrapper">
           <OperationDetails entries={operationDetailsInput}/>
-        </div>
-        <div className="offeringsWrapper">
+        </section>
+        <section className="offeringsWrapper">
           <Offerings entries={offeringsInput}/>
           <MoreOfferings entries={moreOfferingsInput}/>
-        </div>
-        <Activities entries={activitiesInput}/>
+        </section>
+        <section className="activitiesWrapper">
+          <Activities entries={activitiesInput}/>
+        </section>
+        <section className="facilitiesWrapper">
+          <Facilities />
+        </section>
+        <section className="additionalInfoWrapper">
+          
+        </section>
+
       </main>
     </>
 
