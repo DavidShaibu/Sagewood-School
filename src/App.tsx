@@ -1,9 +1,10 @@
+import Activities from "./components/Activities/Activities";
 import Header from "./components/Header";
 import HeroHome from "./components/Hero/Home/HeroHome";
 import OperationDetails from "./components/OperationDetails/OperationDetails";
 import Offerings from "./components/SchoolOfferings/MainOfferings/Offerings";
 import MoreOfferings from "./components/SchoolOfferings/MoreOfferings/MoreOfferings";
-import { operationDetailsInput, offeringsInput, moreOfferingsInput } from "./MainInput";
+import { operationDetailsInput, offeringsInput, moreOfferingsInput, activitiesInput } from "./MainInput";
 
 
 
@@ -20,10 +21,9 @@ function App() {
         </div>
         <div className="offeringsWrapper">
           <Offerings entries={offeringsInput}/>
-        </div>
-        <div className="moreOfferingsWrapper">
           <MoreOfferings entries={moreOfferingsInput}/>
         </div>
+        <Activities entries={activitiesInput}/>
       </main>
     </>
 
