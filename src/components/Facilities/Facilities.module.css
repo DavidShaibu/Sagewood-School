@@ -1,23 +1,30 @@
-.container, .imageContainer, .facilityContainer {
-    height: 500px;
+.facilityContainer, .facilityImage {
+    height: 400px;
 }
 
 .container {
     color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 500px;
     margin-top: 4em;
-}
-
-.imageContainer {
-    overflow: hidden;
+    /* padding: 0 3em; */
 }
 
 .facilityContainer {
     background-image: url("./assets/image1.png");
-    padding: 8em 5em;
+    padding: 1em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.facilityImageContainer {
+    margin: 0;
+}
+
+.facilityImage {
+    width: 100%;
+    margin: 0;
 }
 
 .facilityHeading {
@@ -26,7 +33,7 @@
 
 .facilityText {
     color: white;
-    margin: 3em;
+    margin: 1.5em 3em;
     letter-spacing: 1.2px;
     line-height: 1.5;
 }
@@ -45,4 +52,15 @@
     background: transparent;
     border: 2px solid white;
     color: white;
+}
+
+@media (min-width: 800px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .facilityText {
+        margin: 3em;
+    }
 }

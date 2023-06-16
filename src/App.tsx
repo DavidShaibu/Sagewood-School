@@ -1,11 +1,13 @@
 import Activities from "./components/Activities/Activities";
-import Facilities from "./components/Facilities/facilities";
+import AdditionalInfo from "./components/AdditionalInfo/AdditionalInfo";
+import Button from "./components/Button";
+import Facilities from "./components/Facilities/Facilities";
 import Header from "./components/Header";
 import HeroHome from "./components/Hero/Home/HeroHome";
 import OperationDetails from "./components/OperationDetails/OperationDetails";
 import Offerings from "./components/SchoolOfferings/MainOfferings/Offerings";
 import MoreOfferings from "./components/SchoolOfferings/MoreOfferings/MoreOfferings";
-import { operationDetailsInput, offeringsInput, moreOfferingsInput, activitiesInput } from "./MainInput";
+import { operationDetailsInput, offeringsInput, moreOfferingsInput, activitiesInput, statsInput } from "./MainInput";
 
 
 
@@ -31,9 +33,8 @@ function App() {
           <Facilities />
         </section>
         <section className="additionalInfoWrapper">
-          
+          <AdditionalInfo entries={statsInput}/>
         </section>
-
       </main>
     </>
 

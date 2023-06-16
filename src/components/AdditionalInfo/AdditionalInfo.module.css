@@ -1,0 +1,86 @@
+.container {
+    margin-top: 4em;
+    color: white;
+}
+
+.admissionContainer {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.admissionHeading {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.admissionText {
+    color: white;
+    margin: 1em 3em;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+    max-width: 600px;
+    font-weight: bolder;
+}
+
+.btnMoreInfo {
+    width: 8em;
+    height: 4em;
+}
+
+
+.statsContainer {
+    background-image: url("./assets/image1.png");
+    padding: 4em 0;
+}
+
+.statsFrame {
+    height: 150px;
+    /* margin: 2em 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.statsImage {
+    width: 57px;
+    height: 57px;
+    margin-bottom: 1em;
+    background-size: cover;
+    /* background-position: top right; */
+}
+
+.statsFigure {
+    font-size: 2em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, transparent 35%, white 35%, white 65%, transparent 65%);
+    border-image-slice: 1;
+    padding: .4em;
+}
+
+.statsText {
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: 1.1px;
+}
+
+
+@media(min-width: 415px) {
+    .statsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 800px) {
+    .statsContainer {
+        padding: 4em 4em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

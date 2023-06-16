@@ -8,7 +8,7 @@ const activitiesInput = [
   {
     icon: faBook,
     heading: "British Curriculum",
-    text: "We use British Curriculum and Montesson Materials to teach",
+    text: "We use the British curriculum",
   },
   {
     icon: faBug,
