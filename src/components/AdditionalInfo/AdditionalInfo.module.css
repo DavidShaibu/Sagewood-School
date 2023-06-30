@@ -34,13 +34,16 @@
 
 
 .statsContainer {
-    background-image: url("./assets/image1.png");
+    background-image: url("./assets/red.png");
+}
+
+.statsContent {
     padding: 4em 0;
+    width: 100%;    
 }
 
 .statsFrame {
     height: 150px;
-    /* margin: 2em 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +56,6 @@
     height: 57px;
     margin-bottom: 1em;
     background-size: cover;
-    /* background-position: top right; */
 }
 
 .statsFigure {
@@ -72,15 +74,16 @@
 
 
 @media(min-width: 415px) {
-    .statsContainer {
+    .statsContent {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media(min-width: 800px) {
-    .statsContainer {
-        padding: 4em 4em;
+    .statsContent {
+        margin: 0 auto;
+        max-width: 900px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

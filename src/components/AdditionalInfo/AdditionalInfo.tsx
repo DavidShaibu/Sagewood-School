@@ -72,18 +72,20 @@ const AdditionalInfo = ({ entries }: Props) => {
         />
       </div>
       <div className={styles.statsContainer}>
-        {entries.map((entry, index) => (
-          <div key={index} className={styles.statsFrame}>
-            <div
-              style={{ backgroundImage: `url(${entry.statsIcon})` }}
-              className={styles.statsImage}
-            ></div>
-            <div className={styles.statsFigure}>
-               {counters[index]} 
+        <div className={styles.statsContent}>
+          {entries.map((entry, index) => (
+            <div key={index} className={styles.statsFrame}>
+              <div
+                style={{ backgroundImage: `url(${entry.statsIcon})` }}
+                className={styles.statsImage}
+              ></div>
+              <div className={styles.statsFigure}>
+                 {counters[index]}
+              </div>
+              <div className={styles.statsText}>{entry.statsDescription}</div>
             </div>
-            <div className={styles.statsText}>{entry.statsDescription}</div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

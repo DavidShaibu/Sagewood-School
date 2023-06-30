@@ -20,6 +20,7 @@ const Button = ({ entry }: Props) => {
     color: 'white',
     background,
     borderRadius: '2em',
+    transition: 'background 0.5s ease',
   };
 
   const handleMouseEnter = () => {
