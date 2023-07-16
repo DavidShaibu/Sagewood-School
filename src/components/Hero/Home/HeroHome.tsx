@@ -1,6 +1,5 @@
 import Hero from "../Default/Hero";
-import styles from "./HeroHome.module.css";
-import { HeroHomeInput } from "./input";
+import { HeroHomeInput, styles } from "./input";
 
 
 

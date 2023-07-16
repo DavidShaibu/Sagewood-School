@@ -3,11 +3,11 @@ import Copyrights from "./Footer/Copyrights";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <FooterLayout>
         <Copyrights />
       </FooterLayout>
-    </div>
+    </footer>
   )
 }
 

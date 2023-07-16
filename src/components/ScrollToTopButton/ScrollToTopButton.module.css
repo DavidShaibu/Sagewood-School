@@ -1,0 +1,17 @@
+.scrollToTop {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 9999;
+    background: #00beb0;
+    color: #FFFFFF;
+    border: none;
+    transition: background 0.5s ease;
+}
+
+.scrollToTop:hover, .scrollToTop:focus {
+    background: #ef5874
+}

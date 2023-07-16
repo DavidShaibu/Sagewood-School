@@ -3,6 +3,8 @@ import Button from "../Button";
 import styles from "./AdditionalInfo.module.css";
 import image1 from "./assets/diamonds.png";
 import statsInput from "./input";
+import VisibilitySensor from "react-visibility-sensor";
+
 
 interface Entry {
   statsIcon: string;

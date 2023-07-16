@@ -4,10 +4,10 @@ import NavBar from "./Nav/NavBar"
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
         <ContactDetails />
         <NavBar />
-    </div>
+    </header>
   )
 }
 

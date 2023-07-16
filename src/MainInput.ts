@@ -11,5 +11,6 @@ import ReviewsInput from "./components/Reviews.tsx/input"
 
 
 
-export { operationDetailsInput, offeringsInput, moreOfferingsInput, activitiesInput, statsInput };
+
+export { operationDetailsInput, offeringsInput, moreOfferingsInput, activitiesInput, statsInput, ReviewsInput };
 

@@ -1,5 +1,20 @@
-.logo {
+.navContainer {
+    padding: 0 4em;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
     margin-bottom: 2em;
+}
+
+.menuIcon {
+    color: #ef5874;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.menuIcon:hover, .menuIcon:focus {
+    color: #745656;
 }

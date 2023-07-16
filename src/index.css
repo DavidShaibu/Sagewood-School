@@ -1,18 +1,60 @@
+
+/* ================================= */
+            /* General */
+/* ================================= */
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
+  width: 100vw;
 }
 
+/* ================================= */
+            /* layout */
+/* ================================= */
+
 .main {
-    display: flex;
-    flex-direction: column;
-    /* height: 100vh; */
-  }
-  
-  .locationWrapper {
-    z-index: 0;
-  }
+  display: flex;
+  flex-direction: column;
+}
+
+.locationWrapper {
+  z-index: 0;
+}
+
+/* ================================= */
+            /* Nav */
+/* ================================= */
+.nav {
+  display: flex;
+  color: #FFFFFF;
+}
+
+nav a, .dropdown a {
+  display: block;
+  text-decoration: none;
+}
+
+.navLinks {
+  padding: 1em;
+  border: none;
+  color: #745656;
+  /* font-weight: bolder; */
+}
+
+.dropdown {
+  background: #fff3ea;
+}
+
+.dropdownLinks {
+  padding: 1em;
+  color: #745656;
+  padding-left: 2em;
+}
+
+.active{
+  background: #ef5874;
+  color: #FFFFFF;
+}
