@@ -1,17 +1,20 @@
 import React, { CSSProperties, useState } from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 
-interface Entry {
+export interface ButtonProp {
   initialColor: string;
   hoverColor: string;
   displayText: string;
+  endpoint: string;
 }
 
 interface Props {
-  entry: Entry;
+  entry: ButtonProp;
 }
 
 const Button = ({ entry }: Props) => {
   const [background, setBackground] = useState(entry.initialColor);
+  const navigate = useNavigate();
 
   const buttonStyles : CSSProperties = {
     all: 'unset',
@@ -31,12 +34,18 @@ const Button = ({ entry }: Props) => {
     setBackground(entry.initialColor);
   };
 
+  const handleOnClick = (endpoint: string) => {
+    navigate(endpoint)
+    window.scrollTo(0,0);
+  };
+
   return (
     <button
       style={buttonStyles}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       type="button"
+      onClick={() => handleOnClick(entry.endpoint)}
     >
       {entry.displayText}
     </button>

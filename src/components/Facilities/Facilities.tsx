@@ -1,19 +1,39 @@
 import styles from "./Facilities.module.css";
-import facilityImage from "./assets/diamonds.png";
+import { Images } from "./index";
 
-const facilities = () => {
-  return (
-    <div className={styles.container}>
-        <div className={styles.facilityContainer}>
-            <h2 className={styles.facilityHeading}>What Are The Facilities?</h2>
-            <p className={styles.facilityText}>Infant classroom offers strategies for building positive relationships, helping children develop self-regulation and responding to challenging behaviors in a sanitized and safe environment.</p>
-            <button className={styles.btnLearnMore} type="button">Learn More</button>
-        </div>
-        <div className={styles.facilityImageContainer}>
-            <img className={styles.facilityImage} src={facilityImage} alt="An image of a school facility"></img>
-        </div>
-    </div>
-  )
+interface Entries {
+  heading: string;
+  text: string;
+  button: string;
 }
 
-export default facilities
+interface Props {
+  entries: Entries[];
+}
+
+const facilities = ({ entries }: Props) => {
+  return (
+    <section className={styles.container}>
+      {entries.map((entry, index) => (
+        <div key={index} className={styles.facilityContainer}>
+          <h2 className={styles.facilityHeading}>{entry.heading}</h2>
+          <p className={styles.facilityText}>
+            {entry.text}
+          </p>
+          <button className={styles.btnLearnMore} type="button">
+            {entry.button}
+          </button>
+        </div>
+      ))}{" "}
+      <div className={styles.facilityImageContainer}>
+        <img
+          className={styles.facilityImage}
+          src={Images.pattern}
+          alt="An image of a school facility"
+        ></img>
+      </div>
+    </section>
+  );
+};
+
+export default facilities;

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "./assets/sage.png";
+import { Images } from "./index";
 import MenuIcon from "./MenuIcon";
 import styles from "./NavBar.module.css";
 
@@ -62,7 +62,7 @@ const NavBar = () => {
     <>
       <nav className={styles.navContainer}>
         <div className={styles.logo}>
-          <img src={logo} alt="A logo of sagewoods school" />
+          <img src={Images.logo} alt="A logo of sagewoods school" />
         </div>
         <div className="nav" ref={navRef} onClick={() => closeDropdown}>
           {mobileDisplay ? (

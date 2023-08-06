@@ -1,47 +1,62 @@
-import Activities from "../../components/Activities/Activities";
-import AdditionalInfo from "../../components/AdditionalInfo/AdditionalInfo";
-import Facilities from "../../components/Facilities/Facilities";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import HeroHome from "../../components/Hero/Home/HeroHome";
-import OperationDetails from "../../components/OperationDetails/OperationDetails";
-import Reviews from "../../components/Reviews.tsx/Reviews";
-import Offerings from "../../components/SchoolOfferings/MainOfferings/Offerings";
-import MoreOfferings from "../../components/SchoolOfferings/MoreOfferings/MoreOfferings";
-import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import {
+  Activities,
+  AdditionalInfo,
+  Facilities,
+  Footer,
+  Header,
+  HeroHome,
+  OperationDetails,
+  Reviews,
+  Offerings, 
+  MoreOfferings,
+  ScrollToTopButton,
   operationDetailsInput,
   offeringsInput,
   moreOfferingsInput,
   activitiesInput,
   statsInput,
-  ReviewsInput,
-} from "../../MainInput";
+  reviewsInput,
+  heroHomeInput,
+  facilitiesInput,
+  additionalInfoImagesInput, 
+
+} from "../../components";
 
 export default function Home() {
   return (
     <>
       <section className="heroWrapper">
-        <HeroHome />
+        <HeroHome entries={heroHomeInput} />
       </section>
       <section className="locationWrapper">
         <OperationDetails entries={operationDetailsInput} />
       </section>
       <section className="offeringsWrapper">
         <Offerings entries={offeringsInput} />
+      </section>
+      <section className="moreOfferingsWrapper">
         <MoreOfferings entries={moreOfferingsInput} />
       </section>
       <section className="activitiesWrapper">
         <Activities entries={activitiesInput} />
       </section>
       <section className="additionalInfoWrapper">
-        <AdditionalInfo entries={statsInput} />
+        <AdditionalInfo
+          entries={statsInput}
+          images={additionalInfoImagesInput}
+          buttonProp={{
+            initialColor: "#00beb0",
+            hoverColor: "#ef5874",
+            displayText: "More Information",
+            endpoint: "/about",
+          }}
+        />
       </section>
       <section className="facilitiesWrapper">
-        <Facilities />
+        <Facilities entries={facilitiesInput} />
       </section>
       <section className="reviewWrapper">
-        <Reviews entries={ReviewsInput} />
+        <Reviews entries={reviewsInput} />
       </section>
     </>
   );

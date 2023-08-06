@@ -1,27 +1,55 @@
-// import styles from "./HeroHome.module.css";
 
-interface Entries {
-  image: string;
-  h1: string;
-  h2: string;
-}
+import { useLocation } from "react-router-dom";
+import styles from "./Hero.module.css";
+import { Images } from "../index";
 
-interface Props {
-  entries: Entries[];
-  styles: Record<string, string>;
-}
+const Hero = () => {
+  let heroImage;
+  let heroHeader;
+  let heroBreadCrumb;
+  const location = useLocation();
+  
+  switch (location.pathname) {
+    case "/about": 
+      heroImage = Images.redBackground;
+      heroHeader = "About Us";
+      heroBreadCrumb = "Home / About Us";
+      break;
+    case "/gallery":
+      heroImage = Images.greenBackground;
+      heroHeader = "Gallery";
+      heroBreadCrumb = "Home / Gallery";
+      break;
+    case "/contact-us":
+      heroImage = Images.blueBackground;
+      heroHeader = "Contact Us";
+      heroBreadCrumb = "Home / Contact Us";
+      break;
+    default: 
+      heroImage = Images.redBackground;
+      heroHeader = "Unknown Page";
+      heroBreadCrumb = "Page Not Found";
+      break;
+  }
 
-const Hero = ({ entries, styles }: Props) => {
+  const heroInput = [
+    {
+      image: heroImage,
+      h1: heroHeader,
+      h2: heroBreadCrumb,
+    },
+  ];
+
   return (
     <>
-      {entries.map((entry, index) => (
+      {heroInput.map((entry, index) => (
         <div
           key={index}
           style={{ backgroundImage: `url(${entry.image})` }}
           className={styles.image}
         >
-          <h2 className={styles.supermen}>{entry.h2}</h2>
-          <h1 className={styles.kid}>{entry.h1}</h1>
+          <h1 className={styles.h1Text}>{entry.h1}</h1>
+          <h2 className={styles.h2Text}>{entry.h2}</h2>
         </div>
       ))}
     </>

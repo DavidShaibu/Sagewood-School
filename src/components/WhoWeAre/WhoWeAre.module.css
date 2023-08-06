@@ -1,0 +1,32 @@
+.container {
+    color: #9c8481;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    max-width: 600px;
+    padding: 1em;
+    border-top: .2em solid;
+    border-image: linear-gradient(to right, transparent 10%, #00beb0 10%, #00beb0 90%, transparent 90%);
+    border-image-slice: 1 ;
+}
+
+.writeUp {
+    text-align: center;
+}
+
+.mainHeader {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+.paragraph {
+    margin: 1em 0 1em 0;
+}
+
+.boldText {
+    font-weight: bolder;
+}

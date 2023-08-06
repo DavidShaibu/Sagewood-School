@@ -20,10 +20,6 @@ body {
   flex-direction: column;
 }
 
-.locationWrapper {
-  z-index: 0;
-}
-
 /* ================================= */
             /* Nav */
 /* ================================= */
@@ -57,4 +53,16 @@ nav a, .dropdown a {
 .active{
   background: #ef5874;
   color: #FFFFFF;
+}
+
+/* ================================= */
+            /* Home */
+/* ================================= */
+
+.locationWrapper {
+  z-index: 0;
+}
+
+.moreOfferingsWrapper {
+  margin: 6em 0;
 }

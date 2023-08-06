@@ -1,9 +1,7 @@
 .container {
     color: #745656;
     width: 100%;
-    /* max-width: 800px; */
     height: auto;
-    margin:6em 0;
     padding: 0 3em;
     display: flex;
     flex-direction: column;
@@ -12,9 +10,6 @@
 }
 
 .imageContainer {
-    /* background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover; */
     width: 400px;
     height: 400px;
 }
@@ -28,7 +23,6 @@
 
 .offering{
     width: 400px;
-    /* height: 400px; */
     text-align: center;
     margin: 1em 0;
     padding: 1em;
@@ -36,6 +30,7 @@
 
 .offerHeading {
     margin-bottom: 1em;
+    text-align: center;
 }
 
 

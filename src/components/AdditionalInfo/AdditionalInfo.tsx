@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import Button from "../Button";
 import styles from "./AdditionalInfo.module.css";
-import image1 from "./assets/diamonds.png";
-import statsInput from "./input";
 import VisibilitySensor from "react-visibility-sensor";
+import green from "../../assets/green.png";
+import { ButtonProp } from "../Button";
 
 
 interface Entry {
@@ -14,9 +14,11 @@ interface Entry {
 
 interface Props {
   entries: Entry[];
+  images: string[];
+  buttonProp: ButtonProp;
 }
 
-const AdditionalInfo = ({ entries }: Props) => {
+const AdditionalInfo = ({ entries, images, buttonProp }: Props) => {
   const [counters, setCounters] = useState<number[]>([]);
 
   useEffect(() => {
@@ -55,9 +57,9 @@ const AdditionalInfo = ({ entries }: Props) => {
 
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div
-        style={{ backgroundImage: `url(${image1})` }}
+        style={{ backgroundImage: `url(${images[0]})` }}
         className={styles.admissionContainer}
       >
         <h2 className={styles.admissionHeading}>What About Admission?</h2>
@@ -66,14 +68,10 @@ const AdditionalInfo = ({ entries }: Props) => {
           Schedule an Appointment.
         </p>
         <Button
-          entry={{
-            initialColor: "#00beb0",
-            hoverColor: "#ef5874",
-            displayText: "More Information",
-          }}
+          entry={buttonProp}
         />
       </div>
-      <div className={styles.statsContainer}>
+      <div style={{backgroundImage: `url(${images[1]})`}} className={styles.statsContainer}>
         <div className={styles.statsContent}>
           {entries.map((entry, index) => (
             <div key={index} className={styles.statsFrame}>
@@ -89,7 +87,7 @@ const AdditionalInfo = ({ entries }: Props) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

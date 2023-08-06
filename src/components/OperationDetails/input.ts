@@ -1,9 +1,8 @@
-import image1 from "./assets/image1.png";
-import image2 from "./assets/image2.png";
+import { Images } from "./index";
 
-const OperationDetails = [
+const operationDetailsInput = [
   {
-    imageUrl: image1,
+    imageUrl: Images.redBackground,
     heading:"Location",
     text: "No. 8, Johnson Street, Off Coker Road, Ilupeju, Lagos",
     linkText: "Get Direction",
@@ -11,7 +10,7 @@ const OperationDetails = [
   },
 
   {
-    imageUrl: image2,
+    imageUrl: Images.greenBackground,
     heading:"Hours Of Operation",
     text: "Open from 8AM to 3PM, Monday through Friday. 6 different programs are available for all age groups",
     linkText: "View Different Programs",
@@ -20,4 +19,4 @@ const OperationDetails = [
 
 ];
 
-export default OperationDetails;
+export default operationDetailsInput;

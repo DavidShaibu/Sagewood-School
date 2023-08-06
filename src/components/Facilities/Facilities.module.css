@@ -1,15 +1,17 @@
-.facilityContainer, .facilityImage {
-    height: 400px;
-}
-
 .container {
-    color: white;
-    margin-top: 0;
+    color: #FFFFFF;
+    margin: 0;
     /* padding: 0 3em; */
 }
 
+.facilityContainer, .facilityImage, .facilityImageContainer {
+    height: 400px;
+    margin: 0;
+}
+
+
 .facilityContainer {
-    background-image: url("./assets/image1.png");
+    background-image: url("../../../public/assets/greenBackground.png");
     padding: 1em 0em;
     display: flex;
     flex-direction: column;
@@ -32,7 +34,7 @@
 }
 
 .facilityText {
-    color: white;
+    color: #FFFFFF;
     margin: 1.5em 3em;
     letter-spacing: 1.2px;
     line-height: 1.5;
@@ -44,15 +46,15 @@
     height: 4em;
     font-weight: bolder;
     color:  #00beb0;
-    background: white;
+    background: #FFFFFF;
     border-radius: 2em;
     transition: background 0.5s ease-in-out
 }
 
 .btnLearnMore:hover, .btnLearnMore:focus {
     background: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
 }
 
 @media (min-width: 800px){

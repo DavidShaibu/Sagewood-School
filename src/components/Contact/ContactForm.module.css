@@ -1,0 +1,76 @@
+.formContactUs {
+    color: #745656;
+    padding: 3em 8em;
+}
+
+.getInTouch {
+    font-size: 2rem;
+    margin-bottom: .5em;
+    letter-spacing: 1px;
+}
+
+.content {
+    display: flex;
+    gap: 2em;
+}
+
+.inputDiv, .textAreaDiv {
+    width: 50%;
+}
+
+.labelDiv {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    margin-bottom: 8px;
+}
+
+.labelText {
+    font-size: .7rem;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.asterisk {
+    color: #ef5874;
+}
+
+.inputElement, .textAreaElement {
+    width: 100%;
+}
+
+.inputElement {
+    padding: 1em;
+    outline: none;
+    height: 3.4em;
+    margin-bottom: 2em;
+}
+
+.textAreaElement {
+    padding: 2em;
+}
+
+.buttonDiv {
+    text-align: center;
+}
+
+.submitButton {
+    all: unset;
+    width: 12em;
+    height: 4em;
+    background: #00beb0;
+    color: #FFFFFF;
+    border-radius: 2em;
+    transition: background 0.5s ease;
+}
+
+.submitButton:hover, .submitButton:focus {
+    background: #ef5874
+}
+
+.submittedText {
+    color: #00beb0;
+    text-align: center;
+    margin-bottom: 1em;
+}

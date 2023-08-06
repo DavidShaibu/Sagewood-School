@@ -1,7 +1,6 @@
 .container{
-    background-image: url("../assets/cream2.png");
+    background-image: url("../../../../public/assets/creamBackground.png");
     width: 100%;
-    /* height: auto; */
     margin-top: 1em;
     padding: 14em 3em 1em;
     border-bottom: .5em solid;

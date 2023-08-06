@@ -32,11 +32,6 @@
     height: 4em;
 }
 
-
-.statsContainer {
-    background-image: url("./assets/red.png");
-}
-
 .statsContent {
     padding: 4em 0;
     width: 100%;    

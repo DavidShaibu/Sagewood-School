@@ -1,24 +1,22 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
-  faGoogle,
+  faInstagram,
   faLinkedinIn,
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faAngleDown,
-  faAngleUp,
   faMapMarkerAlt,
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
 import { CSSProperties, useState } from "react";
 import styles from "./ContactDetails.module.css";
-import { operationDetailsInput } from "../../MainInput";
+import { operationDetailsInput } from "./index";
 
 const ContactDetails = () => {
   const addressObject = operationDetailsInput.find(input => input.heading === "Location");
-  const socials = [faFacebookF, faLinkedinIn, faGoogle, faTwitter, faYoutube];
+  const socials = [faFacebookF, faLinkedinIn, faInstagram, faTwitter, faYoutube];
   const contact = [
     {
       icon: faMapMarkerAlt,
@@ -31,8 +29,7 @@ const ContactDetails = () => {
 
   return (
     <>
-      <div className={styles.container}>
-      {/* { !isOpen && <div onClick={() => setOpen(!isOpen)} className={styles.clicker}><FontAwesomeIcon icon={faAngleDown} /></div>} */}
+      <section className={styles.container}>
       <div className={styles.innerContainer}>
               <div className={styles.socials}>
                 {socials.map((social) => (
@@ -53,8 +50,7 @@ const ContactDetails = () => {
                   ))}
               </div>
       </div>
-      {/* { isOpen && <div onClick={() => setOpen(!isOpen)} className={styles.clicker}><FontAwesomeIcon icon={faAngleUp} /></div>} */}
-      </div>
+      </section>
     </>
   );
 };

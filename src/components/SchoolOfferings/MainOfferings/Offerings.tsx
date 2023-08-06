@@ -13,7 +13,7 @@ interface Props {
 
 const Offerings = ({ entries }: Props) => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       {entries.map((entry, index) => (
         <div key={index} className={styles.offering}>
           <div
@@ -25,7 +25,7 @@ const Offerings = ({ entries }: Props) => {
           <p className={styles.offerText}>{entry.description}</p>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

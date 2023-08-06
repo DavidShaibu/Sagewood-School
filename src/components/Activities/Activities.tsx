@@ -1,6 +1,5 @@
 import styles from "./Activities.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 interface Entry {
@@ -15,8 +14,8 @@ interface Props {
 
 const Activities = ({ entries } : Props) => {
   return (
-    <div className={styles.container}>
-        <h2 className={styles.sectionTitle}>Our Activities</h2>
+    <section className={styles.container}>
+        <h2 className={styles.sectionTitle}>Other Highlights</h2>
             <div className={styles.innerContainer}>
                 {entries.map((entry, index) => (
                   <div key={index} className={styles.activity}>
@@ -31,7 +30,7 @@ const Activities = ({ entries } : Props) => {
                 ))}
             </div>
 
-    </div>
+    </section>
   );
 };
 

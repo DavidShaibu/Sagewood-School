@@ -17,7 +17,7 @@ interface Props {
 
 const MoreOfferings = ({ entries }: Props) => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       {entries.map((entry, index) => (
         <React.Fragment key={index}>
           {entry.imageUrl && (
@@ -38,7 +38,7 @@ const MoreOfferings = ({ entries }: Props) => {
           )}
         </React.Fragment>
       ))}
-    </div>
+    </section>
   );
 };
 

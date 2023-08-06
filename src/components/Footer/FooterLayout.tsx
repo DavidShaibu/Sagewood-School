@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "./FooterLayout.module.css";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { ReactNode } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import styles from "./FooterLayout.module.css";
 
 interface Props {
   children: ReactNode;
@@ -9,7 +9,7 @@ interface Props {
 
 const FooterLayout = ({ children }: Props) => {
   return (
-    <div className={styles.footerContainer}>
+    <section className={styles.footerContainer}>
       <div className={styles.footerContent}>
         <div className={styles.aboutUs}>
           <h2>About Us</h2>
@@ -36,7 +36,7 @@ const FooterLayout = ({ children }: Props) => {
         </div>
 
         <div className={styles.extra}>
-          <h2>Extra</h2>
+          <h2>Keep in Touch</h2>
           <a className={styles.text} href="/">
             Twitter
           </a>
@@ -106,7 +106,7 @@ const FooterLayout = ({ children }: Props) => {
           {children}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

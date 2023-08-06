@@ -1,8 +1,8 @@
-import logo from "./assets/sage.png";
+import { Images } from "./index";
 import styles from "./Copyrights.module.css";
 import {
   faFacebookF,
-  faGoogle,
+  faInstagram,
   faLinkedinIn,
   faTwitter,
   faYoutube,
@@ -11,15 +11,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Copyrights = () => {
 
-  const socials = [faFacebookF, faLinkedinIn, faGoogle, faTwitter, faYoutube];
+  const socials = [faFacebookF, faLinkedinIn, faInstagram, faTwitter, faYoutube];
   
   return (
-    <div className={styles.copyrightsContent}>
+    <section className={styles.copyrightsContent}>
       <div className={styles.logoAndSocials}>
         <div className={styles.logoWrapper}>
           <img
             className={styles.logo}
-            src={logo}
+            src={Images.logo}
             alt="A logo of sagewoods school"
           />
           <p className={styles.coprightsText}>&copy; All Rights Reserved</p>
@@ -34,7 +34,7 @@ const Copyrights = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
